@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    <title>Unit Testing with Mochajs</title>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behaviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- Function to be tested -->
+    <script src="./greet.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/greet.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./isFromBellville.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/isFromBellville.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./regCheck.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/regCheck.test.js" charset="utf-8"></script>
+    
+    <!-- Function to be tested -->
+    <script src="./countRegNumber.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/countRegNumber.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./isWeekday.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/isWeekday.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./yearsAgo.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/yearsAgo.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./countAllPaarl.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./countAllFromTown.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/countAllFromTown.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./transportFee.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/transportFee.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./totalPhoneBill.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/totalPhoneBill.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./fromWhere.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/fromWhere.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./findItemsOver20.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/findItemsOver20.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./findItemsOver.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/findItemsOver.test.js" charset="utf-8"></script>
+
+    <!-- Function to be tested -->
+    <script src="./mostProfitableDepartment.js" charset="utf-8"></script>
+    <!-- The test to be performed on the greet function -->
+    <script src="test/mostProfitableDepartment.test.js" charset="utf-8"></script>
+
+    <script>
+        // Mocha configuration and running 
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+
+
+
+</body>
+
+</html>
